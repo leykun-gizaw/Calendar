@@ -1,8 +1,8 @@
 # <p align="center">:calendar: Calendar :calendar:</p>
 
-<p style="text-align: center"><strong><em>From ...</strong></em></p>
+<p><strong><em>From ...</strong></em></p>
 
-<img src="https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/1747/fullstack-vue-guide.jpg" alt="Fullstack Vue3 book" style="display: block; width: 50%; margin: auto">
+<img src="https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/1747/fullstack-vue-guide.jpg" alt="Fullstack Vue3 book" style="width: 400px; height: 300px; display: block">
 
 ## :star2: Description
 
