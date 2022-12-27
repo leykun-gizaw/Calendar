@@ -2,7 +2,7 @@
   <div class="column">
     <div class="card is-radiusless is-shadowless">
       <header class="card-header is-shadowless">
-        <p class="card-header-title">Component</p>
+        <p class="card-header-title">{{ day.abbvTitle.toUpperCase() }}</p>
       </header>
       <div class="card-content is-radiusless"></div>
     </div>
@@ -14,6 +14,7 @@
 import CalendarEvent from "./CalendarEvent.vue";
 export default {
   components: { CalendarEvent },
+  props: ["day"],
 };
 </script>
 
