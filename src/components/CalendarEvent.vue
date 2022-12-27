@@ -1,6 +1,4 @@
-<template>
-  <div class="calendar-event"></div>
-</template>
+<template></template>
 
 <script>
 export default {};
