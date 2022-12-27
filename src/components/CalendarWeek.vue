@@ -1,6 +1,8 @@
 <template>
   <div class="calendar-week">
-    <calendar-day />
+    <div class="columns">
+      <calendar-day v-for="day in [1, 2, 3, 4, 5, 6, 7]" :key="day" />
+    </div>
   </div>
 </template>
 
@@ -11,5 +13,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.columns {
+  border: 1px solid white;
+}
 </style>

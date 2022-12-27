@@ -1,5 +1,11 @@
 <template>
-  <div class="calendar-day">
+  <div class="column">
+    <div class="card is-radiusless">
+      <header class="card-header">
+        <p class="card-header-title">Component</p>
+      </header>
+      <div class="card-content"></div>
+    </div>
     <calendar-event />
   </div>
 </template>
@@ -11,5 +17,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.column {
+  padding: 0;
+}
+.card {
+  min-width: 200px;
+}
 </style>
