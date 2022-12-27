@@ -10,7 +10,7 @@
 - Project scaffold was constructed using [Vite](vitjs.dev).
 - Used the [options API](https://vuejs.org/guide/introduction.html#api-styles).
 
-### :footprints: Steps for local dev startup
+## :footprints: Steps for local dev startup
 
 1. Install node dependencies
 
@@ -25,3 +25,5 @@ npm run dev
 ```
 
 3. Go to `http://localhost:5173`
+
+---
