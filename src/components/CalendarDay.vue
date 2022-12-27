@@ -6,7 +6,11 @@
       </header>
       <p class="day_number">{{ day.id }}</p>
       <div class="card-content is-radiusless">
-        <calendar-event v-for="event in day.events" :key="event" />
+        <calendar-event
+          v-for="event in day.events"
+          :key="event"
+          :event="event"
+        />
       </div>
     </div>
   </div>
@@ -20,7 +24,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .column {
   padding: 0;
 }
@@ -37,6 +41,8 @@ export default {
 }
 .card-content {
   background-color: #555;
+  display: grid;
+  gap: 25px;
 }
 .card-header-title {
   background-color: #444;
