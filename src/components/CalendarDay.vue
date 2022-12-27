@@ -4,6 +4,7 @@
       <header class="card-header is-shadowless">
         <p class="card-header-title">{{ day.abbvTitle.toUpperCase() }}</p>
       </header>
+      <p class="day_number">{{ day.id }}</p>
       <div class="card-content is-radiusless"></div>
     </div>
     <calendar-event />
@@ -25,6 +26,13 @@ export default {
 .card {
   min-width: 200px;
   border-left: 1px solid #666;
+}
+.card .day_number {
+  background-color: #555;
+  color: white;
+  text-align: left;
+  padding: 0 0 0 15px;
+  margin: 0;
 }
 .card-content {
   background-color: #555;
