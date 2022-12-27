@@ -2,9 +2,15 @@
   <div class="card">
     <div class="card-content">{{ event.details }}</div>
     <footer class="card-footer">
-      <a href="#" class="card-footer-item">Save</a>
-      <a href="#" class="card-footer-item">Edit</a>
-      <a href="#" class="card-footer-item">Delete</a>
+      <button class="button is-primary card-footer-item is-radiusless">
+        <font-awesome-icon icon="floppy-disk" />
+      </button>
+      <button class="button is-warning card-footer-item is-radiusless">
+        <font-awesome-icon icon="fa-pen-to-square" />
+      </button>
+      <button class="button is-danger card-footer-item is-radiusless">
+        <font-awesome-icon icon="fa-trash" />
+      </button>
     </footer>
   </div>
 </template>
