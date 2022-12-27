@@ -5,9 +5,10 @@
         <p class="card-header-title">{{ day.abbvTitle.toUpperCase() }}</p>
       </header>
       <p class="day_number">{{ day.id }}</p>
-      <div class="card-content is-radiusless"></div>
+      <div class="card-content is-radiusless">
+        <calendar-event v-for="event in day.events" :key="event" />
+      </div>
     </div>
-    <calendar-event />
   </div>
 </template>
 
