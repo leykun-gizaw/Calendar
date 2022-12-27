@@ -1,5 +1,5 @@
 <template>
-  <div class="card is-radiusless">
+  <div class="card is-radiusless" :style="getEventBackgroundColor">
     <div class="card-content is-radiusless">{{ event.details }}</div>
     <footer class="card-footer is-borderless">
       <button class="button is-success card-footer-item is-radiusless is-small">
@@ -19,6 +19,13 @@
 <script>
 export default {
   props: ["event"],
+  computed: {
+    getEventBackgroundColor() {
+      const colors = ["#ff9999", "#85d6ff", "#99ff99"];
+      let randomColor = colors[Math.floor(Math.random() * colors.length)];
+      return `background-color: ${randomColor}`;
+    },
+  },
 };
 </script>
 
