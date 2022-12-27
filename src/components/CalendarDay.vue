@@ -4,7 +4,7 @@
       <header class="card-header is-shadowless">
         <p class="card-header-title">Component</p>
       </header>
-      <div class="card-content"></div>
+      <div class="card-content is-radiusless"></div>
     </div>
     <calendar-event />
   </div>
@@ -23,10 +23,13 @@ export default {
 }
 .card {
   min-width: 200px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #666;
+}
+.card-content {
+  background-color: #555;
 }
 .card-header-title {
-  background-color: #555;
+  background-color: #444;
   color: white;
   justify-content: center;
 }
