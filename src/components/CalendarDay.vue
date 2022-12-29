@@ -1,7 +1,7 @@
 <template>
   <div class="column">
     <div class="card is-radiusless is-shadowless">
-      <header class="card-header is-shadowless">
+      <header class="card-header is-shadowless" @click="setActive(day.id)">
         <p class="card-header-title">{{ day.abbvTitle.toUpperCase() }}</p>
       </header>
       <p class="day_number">{{ day.id }}</p>
@@ -17,10 +17,16 @@
 </template>
 
 <script>
+import { store } from "../store";
 import CalendarEvent from "./CalendarEvent.vue";
 export default {
   components: { CalendarEvent },
   props: ["day"],
+  methods: {
+    setActive(id) {
+      store.setActiveDay(id);
+    },
+  },
 };
 </script>
 
@@ -29,7 +35,6 @@ export default {
   padding: 0;
 }
 .card {
-  min-width: 200px;
   border-left: 1px solid #666;
 }
 .card .day_number {
@@ -48,5 +53,13 @@ export default {
   background-color: #444;
   color: white;
   justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+.card-header-title:hover {
+  background-color: #4a4a4a;
+}
+.card-header-title:active {
+  background-color: #444;
 }
 </style>
