@@ -1,6 +1,6 @@
 <template>
   <div class="calendar-week">
-    <div class="columns is-mobile">
+    <div class="columns is-desktop">
       <calendar-day v-for="day in sharedState" :key="day" :day="day" />
     </div>
   </div>
