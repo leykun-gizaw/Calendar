@@ -8,7 +8,8 @@ import {
   faFloppyDisk,
   faPenToSquare,
   faTrash,
+  faClose,
 } from '@fortawesome/free-solid-svg-icons';
-library.add(faFloppyDisk, faPenToSquare, faTrash);
+library.add(faFloppyDisk, faPenToSquare, faTrash, faClose);
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');
