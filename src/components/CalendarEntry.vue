@@ -9,7 +9,10 @@
         placeholder="New Event"
       />
       <div class="content has-text-primary">
-        Day of event: <strong class="has-text-primary"><em>Monday</em></strong>
+        Day of event:
+        <strong class="has-text-primary"
+          ><em>{{ titleOfActiveDay }}</em></strong
+        >
       </div>
       <footer>
         <button class="button is-primary is-outlined">Submit</button>
@@ -19,7 +22,17 @@
 </template>
 
 <script>
-export default {};
+import { store } from "../store";
+export default {
+  data() {
+    return {};
+  },
+  computed: {
+    titleOfActiveDay() {
+      return store.getActiveDay().fullTitle;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
