@@ -31,7 +31,6 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-  width: 9rem;
   text-align: center;
 }
 .card .card-content {
