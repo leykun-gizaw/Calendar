@@ -30,6 +30,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.card {
+  width: 9rem;
+  text-align: center;
+}
+.card .card-content {
+  padding: 0.5rem;
+}
 button {
   border: none;
 }
