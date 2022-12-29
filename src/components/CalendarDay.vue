@@ -6,11 +6,7 @@
       </header>
       <p class="day_number">{{ day.id }}</p>
       <div class="card-content is-radiusless">
-        <calendar-event
-          v-for="event in day.events"
-          :key="event"
-          :event="event"
-        />
+        <calendar-event v-for="event in day.events" :key="event" :ev="event" />
       </div>
     </div>
   </div>
