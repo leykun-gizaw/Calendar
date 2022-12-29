@@ -1,6 +1,6 @@
 <template>
   <div class="calendar-week">
-    <div class="columns">
+    <div class="columns is-mobile">
       <calendar-day v-for="day in sharedState" :key="day" :day="day" />
     </div>
   </div>
@@ -13,7 +13,7 @@ export default {
   components: { CalendarDay },
   data() {
     return {
-      sharedState: store.state.seedData,
+      sharedState: store.state.data,
     };
   },
 };
