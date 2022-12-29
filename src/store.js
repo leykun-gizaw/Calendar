@@ -13,4 +13,16 @@ export const store = {
       d.id === dayId ? (d.active = true) : (d.active = false);
     });
   },
+  /**
+   * Adds new event to active day events
+   *
+   * @param {String} eventDetails Description of the event
+   */
+  submitEvent(eventDetails) {
+    const day = this.getActiveDay();
+    day.events.push({
+      details: eventDetails,
+      edit: false,
+    });
+  },
 };
