@@ -46,8 +46,9 @@ export default {
 }
 .card-content {
   background-color: #555;
+  padding: 1rem;
   display: grid;
-  gap: 5px;
+  gap: 0.5rem;
 }
 .card-header-title {
   background-color: #444;
