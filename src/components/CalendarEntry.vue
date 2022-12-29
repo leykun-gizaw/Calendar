@@ -6,8 +6,12 @@
         type="text"
         name=""
         id=""
+        v-model="newEvent"
         placeholder="New Event"
       />
+      <p v-if="error" style="color: red; font-size: 12px; margin-top: 10px">
+        Please input details to submit
+      </p>
       <div class="content has-text-primary">
         Day of event:
         <strong class="has-text-primary"
@@ -15,7 +19,9 @@
         >
       </div>
       <footer>
-        <button class="button is-primary is-outlined">Submit</button>
+        <button class="button is-primary is-outlined" @click="submitNewEvent()">
+          Submit
+        </button>
       </footer>
     </div>
   </div>
@@ -25,7 +31,21 @@
 import { store } from "../store";
 export default {
   data() {
-    return {};
+    return {
+      newEvent: "",
+      error: false,
+    };
+  },
+  methods: {
+    submitNewEvent() {
+      if (this.newEvent === "") {
+        this.error = true;
+      } else {
+        this.error = false;
+        store.submitEvent(this.newEvent);
+        this.newEvent = "";
+      }
+    },
   },
   computed: {
     titleOfActiveDay() {
