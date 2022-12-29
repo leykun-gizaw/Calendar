@@ -29,6 +29,7 @@ export default {
 <style lang="scss" scoped>
 .column {
   padding: 0;
+  width: 10rem;
 }
 .card {
   border-left: 1px solid #666;
